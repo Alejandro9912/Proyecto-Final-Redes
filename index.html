@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="formDiv">
+          <label for="" id="a">TRANSMISOR</label><br />
+          <label for="">MENSAJE A TRANSMITIR</label>
+          <input type="text" name="" class="spawns" id="mensaje"/>
+          <label for="">NUMERO DE FRAMES</label>
+          <input type="text" name="" id="frames" />
+          <br />
+          <table>
+            <tr>
+              <th><label>INDICADOR</label></th>
+              <th><label>ACK</label></th>
+              <th><label>ENQ</label></th>
+              <th><label>CTR</label></th>
+              <th><label>DAT</label></th>
+              <th><label>PPT</label></th>
+              <th><label>LPT</label></th>
+              <th><label>NUM</label></th>
+              <th><label>INFORMACION</label></th>
+              <th><label>INDICADOR</label></th>
+            </tr>
+            <tr>
+              <td><input type="text" readonly class="spawn" id="indi1"/></td>
+              <td><input type="text" readonly value="0" id="ack1"/></td>
+              <td><input type="text" readonly value="0" id="enq1"/></td>
+              <td><input type="text" readonly value="0" id="ctr1"/></td>
+              <td><input type="text" readonly value="0" id="dat1"/></td>
+              <td><input type="text" readonly value="0" id="ppt1"/></td>
+              <td><input type="text" readonly value="0" id="lpt1"/></td>
+              <td><input type="text" readonly id="num"/></td>
+              <td><input type="text" readonly class="spawn" id="info" /></td>
+              <td><input type="text" readonly class="spawn" id='indi'/></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><input type="checkbox"  id="ack" onclick="marcBox(id)"/></td>
+              <td><input type="checkbox"  id="enq" onclick="marcBox(id)"/></td>
+              <td><input type="checkbox"  id="ctr" onclick="marcBox(id)"/></td>
+              <td><input type="checkbox"  id="dat" onclick="marcBox(id)"/></td>
+              <td><input type="checkbox"  id="ppt" onclick="marcBox(id)"/></td>
+              <td><input type="checkbox"  id="lpt" onclick="marcBox(id)"/></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="7">
+                <label for="">SEMANTICA: TRAMA DE DATOS</label><br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="10"><button onclick="envioFrame()">ENVIAR</button><br /></td>
+            </tr>
+          </table>
+
+          <label for="" id="a">RECEPTOR</label><br />
+          <label for="">TRAMA RECIBIDA</label>
+          <table>
+            <tr>
+              <td><input type="text" readonly class="spawn" id="headRec"/></td>
+              <td><input type="text" readonly class="spawn" id="tramaDat"/></td>
+              <td><input type="text" readonly class="spawn" id="infoRec"/></td>
+              <td><input type="text" readonly class="spawn" id="trailRec"/></td>
+            </tr>
+            <tr>
+              <td><label for="">HEADER</label></td>
+              <td><label for=""></label></td>
+              <td><label for="">INFORMACION</label></td>
+              <td><label for="">TRAILER</label></td>
+            </tr>
+          </table>
+          <label for="" id="a">RESPUESTA</label>
+          <table>
+            <tr>
+              <th><label>INDICADOR</label></th>
+              <th><label>ACK</label></th>
+              <th><label>ENQ</label></th>
+              <th><label>CTR</label></th>
+              <th><label>DAT</label></th>
+              <th><label>PPT</label></th>
+              <th><label>LPT</label></th>
+              <th><label>NUM</label></th>
+              <th><label>INFORMACION</label></th>
+              <th><label>INDICADOR</label></th>
+            </tr>
+            <tr>
+              <td><input type="text" readonly class="spawn" id="indi2"/></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly class="spawn" id="infoRes"/></td>
+              <td><input type="text" readonly class="spawn" id="indi3" /></td>
+            </tr>
+            <tr>
+              <td colspan="10"><button>RESPONDER</button><br /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="9"><label for="" id="tramaEx"></label><br /></td>
+            </tr>
+          </table>
+          <label for="">MENSAJE RECIBIDO:</label>
+          <input type="text" class="spawns" readonly />
+      </div>
+
+      <br />
+      <div id="tramasDiv">
+          <label for="">SECUENCIA DE TRAMAS:</label><br />
+          <input type="text" id="tramasSec" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 4px;
+}
+body {
+  margin-top: 100px;
+  margin-left: 90px;
+  margin-bottom: 86px;
+  /* background-image: url("https://static.wixstatic.com/media/ed17ee_4ea50f21ac764c0f9480004950690af3~mv2.gif");
+    background-size: 100% 128%; */
+  background: linear-gradient(to bottom, red, black);
+}
+div#contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 2;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
+div#tramasDiv {
+  text-align: left;
+}
+input {
+  width: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+input.spawn {
+  width: fit-content;
+}
+input.spawns {
+  width: 10.6cm;
+}
+input#tramasSec {
+  width: fit-content;
+  height: 14cm;
+}
+label {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2px;
+}
+label#a {
+  padding: 10px;
+  font-size: 0.7cm;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+table tr,
+th,
+td {
+  border: 1px;
+  text-align: center;
+}
+button {
+  background: linear-gradient(to bottom, black, rgba(175, 164, 8, 0.685) );
+  border-radius: 15px 8px;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
