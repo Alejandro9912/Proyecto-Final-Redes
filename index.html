@@ -98,18 +98,18 @@
             </tr>
             <tr>
               <td><input type="text" readonly class="spawn" id="indi2"/></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
-              <td><input type="text" readonly /></td>
+              <td><input type="text" readonly id="resAck"/></td>
+              <td><input type="text" readonly id="resEnq"/></td>
+              <td><input type="text" readonly id="resCtr"/></td>
+              <td><input type="text" readonly id="resDat"/></td>
+              <td><input type="text" readonly id="resPpt"/></td>
+              <td><input type="text" readonly id="resLpt"/></td>
+              <td><input type="text" readonly id="resNum"/></td>
               <td><input type="text" readonly class="spawn" id="infoRes"/></td>
               <td><input type="text" readonly class="spawn" id="indi3" /></td>
             </tr>
             <tr>
-              <td colspan="10"><button>RESPONDER</button><br /></td>
+              <td colspan="10"><button onclick="responder()">RESPONDER</button><br /></td>
             </tr>
             <tr>
               <td></td>
@@ -117,13 +117,13 @@
             </tr>
           </table>
           <label for="">MENSAJE RECIBIDO:</label>
-          <input type="text" class="spawns" readonly />
+          <input type="text" class="spawns" id="mensajeRec" readonly />
       </div>
 
       <br />
       <div id="tramasDiv">
           <label for="">SECUENCIA DE TRAMAS:</label><br />
-          <input type="text" id="tramasSec" />
+          <textarea disabled id="tramaSec" class="textArea"></textarea>
       </div>
     </div>
   </body>
