@@ -62,7 +62,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="10"><button onclick="envioFrame()">ENVIAR</button><br /></td>
+              <td colspan="10"><button onclick="envioFrame()" id="envio">ENVIAR</button><br /></td>
             </tr>
           </table>
 
@@ -109,7 +109,7 @@
               <td><input type="text" readonly class="spawn" id="indi3" /></td>
             </tr>
             <tr>
-              <td colspan="10"><button onclick="responder()">RESPONDER</button><br /></td>
+              <td colspan="10"><button onclick="responder()" id="responder">RESPONDER</button><br /></td>
             </tr>
             <tr>
               <td></td>
@@ -123,7 +123,7 @@
       <br />
       <div id="tramasDiv">
           <label for="">SECUENCIA DE TRAMAS:</label><br />
-          <textarea disabled id="tramaSec" class="textArea"></textarea>
+          <textarea id="tramaSec" class="textArea" rows="37" cols="28"></textarea>
       </div>
     </div>
   </body>

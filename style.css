@@ -31,8 +31,8 @@ input.spawn {
 input.spawns {
   width: 10.6cm;
 }
-input#tramasSec {
-  width: fit-content;
+textarea#tramasSec {
+  width: 14cm;
   height: 14cm;
 }
 label {
